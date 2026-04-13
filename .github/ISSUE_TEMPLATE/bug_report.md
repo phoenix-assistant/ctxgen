@@ -1,29 +1,35 @@
 ---
 name: Bug Report
-about: Something isn't working as expected
-title: "[Bug] "
+about: Report a bug or unexpected behavior
+title: '[BUG] '
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 ## Describe the Bug
-<!-- A clear description of what the bug is -->
+
+A clear and concise description of what the bug is.
 
 ## Steps to Reproduce
-1. Run `ctxgen ...`
+
+1. Run `...`
 2. See error
 
 ## Expected Behavior
-<!-- What should have happened? -->
+
+What you expected to happen.
 
 ## Actual Behavior
-<!-- What actually happened? Include error output if available -->
+
+What actually happened. Include the full error output if applicable.
 
 ## Environment
-- OS:
-- Node version:
-- ctxgen version:
-- Project type (TS/Python/Go/Rust):
+
+- OS: [e.g. macOS 14, Ubuntu 22.04]
+- Node.js: [e.g. 20.11.0] (`node --version`)
+- Tool version: (`npx <tool> --version`)
+- Shell: [e.g. zsh, bash]
 
 ## Additional Context
-<!-- Anything else helpful -->
+
+Any other context, screenshots, or logs.

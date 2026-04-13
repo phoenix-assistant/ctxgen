@@ -1,20 +1,32 @@
-## Description
-<!-- What does this PR do? Link the issue: Closes #XX -->
+## Summary
+
+Brief description of what this PR does and why.
+
+Closes #<!-- issue number -->
 
 ## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change
-- [ ] Documentation update
-- [ ] Refactor
+
+- [ ] 🐛 Bug fix
+- [ ] ✨ New feature
+- [ ] ♻️ Refactor
+- [ ] 📚 Documentation
+- [ ] 🧪 Tests
+- [ ] 🔧 Chore / dependency update
+
+## Changes
+
+- ...
+- ...
 
 ## Testing
-- [ ] Tests pass (`npm test`)
-- [ ] New tests added for new behavior
-- [ ] Manual testing done
+
+- [ ] `npm test` passes locally
+- [ ] Added/updated tests for new behavior
+- [ ] Manually tested with: `...`
 
 ## Checklist
-- [ ] Code follows project conventions
-- [ ] Type-check passes (`npm run typecheck`)
-- [ ] Lint passes (`npm run lint`)
-- [ ] Changeset added if needed
+
+- [ ] Code follows project style guidelines
+- [ ] Self-reviewed the diff
+- [ ] No debug logs or console.log left in
+- [ ] Updated README/docs if behavior changed

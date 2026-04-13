@@ -201,3 +201,51 @@ npm run build
 ## License
 
 MIT © [Phoenix AI Hub](https://github.com/phoenix-assistant)
+
+---
+
+## Architecture
+
+```
+ctxgen
+├── src/
+│   ├── cli.ts            # Commander CLI entry point
+│   ├── analyze.ts        # Project stack detection (lang/framework/pm/test/lint)
+│   ├── generate.ts       # Template rendering → context file content
+│   ├── lint.ts           # Scoring engine (completeness/specificity/tokens)
+│   ├── formats/          # Format-specific templates (claude/agents/cursor/copilot)
+│   └── index.ts          # Programmatic API exports
+└── tests/
+    └── *.test.ts
+```
+
+**Flow:** `analyze()` → detect stack → `generate()` → render template → (optionally) `lintFile()` → score
+
+---
+
+## CI Setup
+
+Use `ctxgen lint` as a CI gate to enforce context file quality:
+
+```yaml
+# .github/workflows/ctxgen.yml
+name: Lint Context Files
+on: [push, pull_request]
+
+jobs:
+  lint-context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npx @phoenixaihub/ctxgen lint
+```
+
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+

@@ -1,19 +1,27 @@
 ---
 name: Feature Request
-about: Suggest an idea or improvement
-title: "[Feature] "
+about: Suggest a new feature or enhancement
+title: '[FEAT] '
 labels: enhancement
-assignees: ""
+assignees: ''
 ---
 
-## Problem
-<!-- What problem does this solve? Who has this problem? -->
+## Problem Statement
+
+What problem does this feature solve? What are you trying to do that's currently difficult?
 
 ## Proposed Solution
-<!-- Describe what you'd like -->
+
+A clear description of the feature you'd like.
 
 ## Alternatives Considered
-<!-- Any alternative approaches you've thought about? -->
+
+Any alternative approaches or workarounds you've considered.
+
+## Use Case / Example
+
+Show how this would look in practice (CLI usage, API, config, etc.).
 
 ## Additional Context
-<!-- Mockups, examples, links to prior art -->
+
+Any references, related issues, or additional context.
