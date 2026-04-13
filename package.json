@@ -1,0 +1,51 @@
+{
+  "name": "@phoenixaihub/ctxgen",
+  "version": "0.1.0",
+  "description": "Generate and lint CLAUDE.md / AGENTS.md / .cursorrules / .github/copilot-instructions.md from your codebase",
+  "keywords": ["claude", "cursor", "copilot", "context", "ai", "coding-assistant", "cli"],
+  "homepage": "https://github.com/phoenix-assistant/ctxgen#readme",
+  "bugs": "https://github.com/phoenix-assistant/ctxgen/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/ctxgen.git"
+  },
+  "license": "MIT",
+  "author": "Phoenix AI Hub",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "ctxgen": "./dist/cli.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1",
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "eslint": "^9.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
